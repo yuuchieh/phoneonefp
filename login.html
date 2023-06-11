@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/login.css">
+		<title>Phoneone-Login</title>
+		
+	</head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12 p-0">
+          <div class="left">
+            <img src="model/手機板.png" alt="logo">
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 text-center p-0">
+          <div class="right align-items-center d-flex">
+            <div class="column">
+              <img src="photo/logo.png" alt="logo">
+              <h2>會員登入</h2>
+              <form method="post" action="" id="loginForm">
+                電子郵件：<input type="email" name="email"><br>
+                密碼：<input type="password" name="password"><br>
+                <input type="submit" value="登入" class="submit">
+                <input type="submit" value="忘記密碼" class="submit"><br>
+              </form>
+              <div class="row justify-content-center ">
+                  <p>還沒有帳號嗎？</p>
+                  <a href="register.html">點擊註冊</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault(); 
+      var email = document.getElementsByName("email")[0].value;
+      var password = document.getElementsByName("password")[0].value;
+  
+      var name = "PhoneOne"; 
+      window.location.href = "index.html?name=" + encodeURIComponent(name);
+    }
+  
+    var loginForm = document.getElementById("loginForm");
+    loginForm.addEventListener("submit", handleLogin);
+  </script>
+</html>

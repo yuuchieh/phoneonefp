@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shoppingcart</title>
+        <link rel="stylesheet" href="css/shoppingcart.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <header>
+            <div class='container'>
+                <nav class="navbar navbar-expand-md navbar-light fixed-top header-color">
+                  <a class="navbar-brand" href="index.html"><img src='photo/logo.png' width='155'></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link nav-text" href="index.html" id="backToIndex">回首頁</a>
+                      </li>
+                    </ul>
+              
+                  </div>
+                </nav>
+              </div>
+        </header>
+
+        <div class="cart">
+            <div class="header">
+                <h1>購物車</h1>
+            </div>
+            
+            <div class="cart-item">
+                <img src="product1.jpg" alt="product1">
+                <div class="cartdetails">
+                    <div class="ctitle">商品名稱 1</div>
+                    <div class="cprice">$10</div>
+                </div>
+                <div class="quantity">
+                    <input type="number" min="1" value="1">
+                </div>
+                <div class="subtotal">小計$10</div>
+                <button class="delete-btn">刪除</button>
+            </div>
+            
+            <div class="cart-item">
+                <img src="product2.jpg" alt="product2">
+                <div class="cartdetails">
+                    <div class="ctitle">商品名稱 2</div>
+                    <div class="cprice">$15</div>
+                </div>
+                <div class="quantity">
+                    <input type="number" min="1" value="1">
+                </div>
+                <div class="subtotal">小計$15</div>
+                <button class="delete-btn">刪除</button>
+            </div>
+
+            <div class="shipping">
+                <div class="leftcolumn">
+                    <div class="form1">
+                        <label for="recipient">收件人</label>
+                        <input type="text" id="recipient" placeholder="請輸入收件人姓名">
+                    </div>
+                    <div class="form1">
+                        <label for="contact">聯絡方式</label>
+                        <input type="text" id="contact" placeholder="請輸入聯絡方式">
+                    </div>
+                </div>
+                <div class="rightcolumn">
+                    <div class="form1">
+                        <label for="send">寄送地址</label>
+                        <select id="send">
+                            <option value="city">台北市</option>
+                            <option value="city">新北市</option>
+                            <option value="city">桃園市</option>
+                            <option value="city">台中市</option>
+                            <option value="city">台南市</option>
+                            <option value="city">高雄市</option>
+                            <option value="city">宜蘭縣</option>
+                            <option value="city">新竹縣</option>
+                            <option value="city">新竹市</option>
+                            <option value="city">苗栗縣</option>
+                            <option value="city">彰化縣</option>
+                            <option value="city">南投縣</option>
+                            <option value="city">雲林縣</option>
+                            <option value="city">嘉義縣</option>
+                            <option value="city">嘉義市</option>
+                            <option value="city">屏東縣</option>
+                            <option value="city">花蓮縣</option>
+                            <option value="city">台東縣</option>
+                            <option value="city">澎湖縣</option>
+                            <option value="city">基隆市</option>
+                        </select>
+                    </div>
+                    <div class="form1">
+                        <label for="address">地址</label>
+                        <input type="text" id="address" placeholder="請輸入地址">
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="notes">
+                <textarea rows="3" placeholder="請輸入備註"></textarea>
+            </div>
+            
+            
+            
+            <!--新增產品-->
+            
+            <div class="total">總計: $25</div>
+            <a href="" class="checkout-btn" onclick="showAlert()">結帳</a>
+            <a href="" class="checkout-btn">繼續購物</a>
+        </div>    
+    </body>
+
+    <script>
+        function showAlert(){
+            alert("感謝您的購買(ﾉ∀`*)~~!請確保您選擇之手機殼與您的手機型號相符!如您有特殊要求或緊急狀況，請與客服聯繫，我們會盡快為您服務~!");
+            window.location.href = "";
+        }
+    </script>
+
+    
+    <script>
+        //收到inddex.html傳來的username
+        var searchParams = new URLSearchParams(window.location.search);
+        var name = searchParams.get("name");
+
+        //點擊右上角回首頁傳到index.html
+        function handleUserDetail(event) {
+        event.preventDefault(); 
+        
+        window.location.href = "index.html?name=" + encodeURIComponent(name);
+        }
+        var backToIndex = document.getElementById("backToIndex");
+        backToIndex.addEventListener("click", handleUserDetail);
+    </script>
+</html>
+
+

@@ -1,0 +1,119 @@
+#aboutus h3{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 32px;
+}
+
+#aboutus *{
+  margin-bottom: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#aboutus .container-fuild{
+  background-color: rgb(255, 255, 255);
+}
+
+
+#aboutus .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* #aboutus .partner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+} */
+
+/* #aboutus .partner1:nth-child(2n+1),
+#aboutus .partner1:nth-child(2n+2) {
+  grid-row: 2;
+}
+
+#aboutus .partner1:nth-child(2n+3) {
+  grid-row: 3;
+} */
+
+#aboutus .partner1 {
+  position: relative;
+  margin: 25px;
+  width: 200px;
+  height: 250px;
+  background-image: url('../photo/shadow.png');
+  border-radius: 20px 20px;
+  overflow: hidden;
+}
+
+#aboutus .photo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 10px;
+}
+
+#aboutus .partimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+#aboutus .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#aboutus .partner1:hover .partimg {
+  opacity: 0;
+}
+
+#aboutus .partner1:hover .overlay {
+  opacity: 1;
+}
+
+#aboutus .cont {
+  color: white;
+  text-align: center;
+}
+
+#aboutus .contxt {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#aboutus .shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+}
+
+/* #aboutus .front {
+  display: flex;
+}
+
+#aboutus .back {
+  display: flex;
+} */
+
+/* #aboutus main {
+  flex-direction: column;
+  align-items: center;
+} */

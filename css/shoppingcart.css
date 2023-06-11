@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding-top:100px;
+    padding-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+.cart {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4a4a80;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(123, 122, 129);
+    border-radius: 5px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.cartdetails {
+    flex-grow: 1;
+}
+
+.ctitle {
+    font-weight: bold;
+    color: #4a4a80;
+    margin-bottom: 5px;
+}
+
+.cprice {
+    color: #999;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity input {
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.subtotal {
+    font-weight: bold;
+    color: #4a4a80;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: rgb(247, 120, 120);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: rgb(241, 42, 42);
+}
+
+.total {
+    font-weight: bold;
+    color: #4a4a80;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4a4a80;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.checkout-btn:hover{
+    background-color: #8686ca;
+}
+
+.shipping {
+    display: flex;
+    margin-top: 10px;
+}
+
+.leftcolumn {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.rightcolumn {
+    flex: 1;
+}
+
+.form1 {
+    margin-bottom: 10px;
+}
+
+.form1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4a4a80;
+}
+
+.form1 input,
+.form1 select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+.notes {
+    margin-top: 10px;
+}
+
+.notes textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
